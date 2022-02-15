@@ -8,6 +8,7 @@ btn.addEventListener("click", () => {
   for(let i=0; i<6; ++i){
   const randomNumberFromArray = Math.floor(Math.random() * hex.length);
   hexColor += hex[randomNumberFromArray];  
+ //done for this project
   }
 
  color.textContent = hexColor;

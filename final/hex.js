@@ -14,6 +14,8 @@ btn.addEventListener("click", () => {
  color.textContent = hexColor;
  document.body.style.background = hexColor;
  
+//it would be better to create a function that contains floor function here! Math.floor(Math.random() * hex.length);
+
 
 })
 

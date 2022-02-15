@@ -51,7 +51,7 @@ Variables
   --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   --max-width: 1170px;
-  --fixed-width: 620px;
+  --fixed-width:620px;
 }
 /*
 =============== 
@@ -91,6 +91,7 @@ h4 {
 }
 h1 {
   font-size: 3rem;
+ 
 }
 h2 {
   font-size: 2rem;
@@ -167,7 +168,7 @@ main {
 }
 #value {
   font-size: 6rem;
-  font-weight: bold;
+  font-weight:bold;
 }
 .btn {
   text-transform: uppercase;
@@ -183,8 +184,10 @@ main {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   border-radius: var(--radius);
   margin: 0.5rem;
+ 
 }
 .btn:hover {
   color: var(--clr-white);
   background: var(--clr-black);
 }
+

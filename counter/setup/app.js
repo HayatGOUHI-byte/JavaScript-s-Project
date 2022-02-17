@@ -1,36 +1,8 @@
 //here javaScript
 
-
 const val = document.querySelector("#value");
-const btnDecrease = document.getElementById("decrease");
-const btnIncrease = document.getElementById("increase");
-const btnReset = document.getElementById("reset");
 
 let valeur = val.textContent;
-//Increase Button
-btnIncrease.addEventListener("click",function(){
-    valeur ++;
-    val.textContent = valeur;
-    colorChange();
-});
-
-//Decrease Buuton function
-btnDecrease.addEventListener("click",function(){
-    valeur -- ;
-    val.textContent = valeur;
-    colorChange();
-});
-
-
-//funtion to reset to 0
-
-btnReset.addEventListener("click",function(){
-    valeur = 0;
-    val.textContent = valeur;
-    colorChange();
-});
-
-
 
 //function to change color of value Number
 
@@ -43,3 +15,24 @@ function colorChange (){
     val.style.color='black';
 
 }
+
+const btns = document.querySelectorAll(".btn");
+
+btns.forEach(function(btn){
+    btn.addEventListener("click", function(e){
+        const styles = e.currentTarget.classList;
+        if(styles.contains("decrease")){
+            valeur--;
+            val.textContent = valeur;
+            colorChange();
+        }else if(styles.contains("increase")){
+            valeur++;
+            val.textContent = valeur;
+            colorChange();
+        }else{
+            valeur = 0;
+            val.textContent = valeur;
+        }
+        })
+})
+

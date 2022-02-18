@@ -70,4 +70,4 @@ const reviews = [
   }
 ];
 const imageSrc = document.getElementById("person-img");
-console.log(imageSrc.getAttribute("src"));
+console.log(Math.floor(Math.random() * reviews.length ));

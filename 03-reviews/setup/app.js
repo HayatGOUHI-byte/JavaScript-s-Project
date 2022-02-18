@@ -69,5 +69,5 @@ const reviews = [
     img: "./shawn.jfif",
   }
 ];
-const imageSrc = document.getElementById("person-img").src;
-console.log(imageSrc.length);
+const imageSrc = document.getElementById("person-img");
+console.log(imageSrc.getAttribute("src"));

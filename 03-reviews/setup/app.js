@@ -46,7 +46,28 @@ const reviews = [
     job: "web developer",
     info: "je suis passionné par le développement",
     img:"./dua lipa.jfif",
+  },
+  {
+    id:2,
+    name: "Kim Sanya",
+    job: "back-end developer",
+    info: "I'm passionnate about developement tools",
+    img: "./shawn.jfif",
+  },
+  {
+    id:3,
+    name: "susan Smith",
+    job: "web developer",
+    info: "je suis passionné par le développement",
+    img:"./dua lipa.jfif",
+  },
+  {
+    id:4,
+    name: "Kim Sanya",
+    job: "back-end developer",
+    info: "I'm passionnate about developement tools",
+    img: "./shawn.jfif",
   }
 ];
-
-console.log(reviews[0]["info"]);
+const imageSrc = document.getElementById("person-img").src;
+console.log(imageSrc.length);

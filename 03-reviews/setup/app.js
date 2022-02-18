@@ -69,5 +69,12 @@ const reviews = [
     img: "./shawn.jfif",
   }
 ];
-const imageSrc = document.getElementById("person-img");
-console.log(Math.floor(Math.random() * reviews.length ));
+const prevBtn = document.querySelector(".prev-btn");
+let imageSrc = document.getElementById("person-img");
+const RandomNumber = Math.floor(Math.random() * reviews.length );
+
+prevBtn.addEventListener("click", function(){
+  imageSrc.getAttribute("src") = 0;
+ 
+})
+

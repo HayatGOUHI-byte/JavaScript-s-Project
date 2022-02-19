@@ -69,12 +69,24 @@ const reviews = [
     img: "./shawn.jfif",
   }
 ];
-const prevBtn = document.querySelector(".prev-btn");
-let imageSrc = document.getElementById("person-img");
-const RandomNumber = Math.floor(Math.random() * reviews.length );
+// const prevBtn = document.querySelector(".prev-btn");
+// let imageSrc = document.getElementById("person-img");
+// const RandomNumber = Math.floor(Math.random() * reviews.length );
 
-prevBtn.addEventListener("click", function(){
-  imageSrc.getAttribute("src") = 0;
+// prevBtn.addEventListener("click", function(){
+//   imageSrc.getAttribute("src") = 0;
  
+// })
+
+let currentItem = 1;
+window.addEventListener("DOMContentLoaded",function(){
+const item = reviews[1];
+
+
+let imageRecupere = document.getElementById("person-img").getAttribute("src");
+console.log(imageRecupere.innerHTML);
+
+
+
 })
 

@@ -79,13 +79,12 @@ const reviews = [
 // })
 
 let currentItem = 1;
+const prev = document.querySelector("img");
+
 window.addEventListener("DOMContentLoaded",function(){
 const item = reviews[currentItem];
 
-
-let imageRecupere = document.getElementById("person-img").getAttribute("src");
-console.log(imageRecuper
-
+console.log(prev.getAttribute("src")) ;
 
 
 })

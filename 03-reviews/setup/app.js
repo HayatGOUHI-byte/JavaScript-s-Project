@@ -69,6 +69,11 @@ const reviews = [
     img: "./shawn.jfif",
   }
 ];
+
+
+
+
+
 // const prevBtn = document.querySelector(".prev-btn");
 // let imageSrc = document.getElementById("person-img");
 // const RandomNumber = Math.floor(Math.random() * reviews.length );
@@ -82,24 +87,21 @@ const reviews = [
 
 let currentItem = 1;
 
-const btnNext = document.querySelector("next-btn");
-const btnPrev = document.querySelector("prev-btn");
+// const btnNext = document.querySelector("next-btn");
+// const btnPrev = document.querySelector("prev-btn");
 const image = document.querySelector("img");
-const info = document.getElementById("info");
-const job = document.getElementById("job");
-const author = document.getElementById("author");
+// const info = document.getElementById("info");
+// const job = document.getElementById("job");
+// const author = document.getElementById("author");
 
 
 window.addEventListener("DOMContentLoaded",function(){
- person();
- 
-
-})
-
-function person(){
   const item = reviews[currentItem];
   image.img = item.src;
-  info.contentText = item.info;
-  job.contentText = item.job;
-  author.contentText = item.author;
-}
+})
+
+// function person(){
+//   info.contentText = item.info;
+//   job.contentText = item.job;
+//   author.contentText = item.author;
+//  }

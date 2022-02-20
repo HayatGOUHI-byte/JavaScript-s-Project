@@ -1,43 +1,3 @@
-// local reviews data
-// const reviews = [
-//   {
-//     id: 1,
-//     name: "susan smith",
-//     job: "web developer",
-//     img:
-//       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883334/person-1_rfzshl.jpg",
-//     text:
-//       "I'm baby meggings twee health goth +1. Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humblebrag pickled coloring book salvia hoodie, cold-pressed four dollar toast everyday carry",
-//   },
-//   {
-//     id: 2,
-//     name: "anna johnson",
-//     job: "web designer",
-//     img:
-//       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883409/person-2_np9x5l.jpg",
-//     text:
-//       "Helvetica artisan kinfolk thundercats lumbersexual blue bottle. Disrupt glossier gastropub deep v vice franzen hell of brooklyn twee enamel pin fashion axe.photo booth jean shorts artisan narwhal.",
-//   },
-//   {
-//     id: 3,
-//     name: "peter jones",
-//     job: "intern",
-//     img:
-//       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883417/person-3_ipa0mj.jpg",
-//     text:
-//       "Sriracha literally flexitarian irony, vape marfa unicorn. Glossier tattooed 8-bit, fixie waistcoat offal activated charcoal slow-carb marfa hell of pabst raclette post-ironic jianbing swag.",
-//   },
-//   {
-//     id: 4,
-//     name: "bill anderson",
-//     job: "the boss",
-//     img:
-//       "https://res.cloudinary.com/diqqf3eq2/image/upload/v1586883423/person-4_t9nxjt.jpg",
-//     text:
-//       "Edison bulb put a bird on it humblebrag, marfa pok pok heirloom fashion axe cray stumptown venmo actually seitan. VHS farm-to-table schlitz, edison bulb pop-up 3 wolf moon tote bag street art shabby chic. ",
-//   },
-// ];
-
 
 const reviews = [
   {
@@ -59,49 +19,73 @@ const reviews = [
     name: "susan Smith",
     job: "web developer",
     info: "je suis passionné par le développement",
-    img:"./dua lipa.jfif",
+    img:"./hailee.jfif",
   },
   {
     id:4,
     name: "Kim Sanya",
     job: "back-end developer",
     info: "I'm passionnate about developement tools",
-    img: "./shawn.jfif",
+    img: "./person-1.jpeg",
   }
 ];
 
 
-
-
-
-// const prevBtn = document.querySelector(".prev-btn");
-// let imageSrc = document.getElementById("person-img");
-// const RandomNumber = Math.floor(Math.random() * reviews.length );
-
-// prevBtn.addEventListener("click", function(){
-//   imageSrc.getAttribute("src") = 0;
- 
-// })
-
 //current profile
 
-let currentItem = 1;
+let currentItem = 0;
 
-// const btnNext = document.querySelector("next-btn");
-// const btnPrev = document.querySelector("prev-btn");
-const image = document.querySelector("img");
-// const info = document.getElementById("info");
-// const job = document.getElementById("job");
-// const author = document.getElementById("author");
 
+const btnNext = document.querySelector(".next-btn");
+const btnPrev = document.querySelector(".prev-btn");
+
+const image = document.getElementById("person-img");
+const getInfo = document.getElementById("info");
+const getJob = document.getElementById("job");
+const getAuthor = document.getElementById("author");
+
+// get button surprise Me
+
+const buttonSurprise = document.querySelector(".random-btn");
+
+//surprise Me
+buttonSurprise.addEventListener("click",function(){
+ RandomNumber();
+
+});
+
+
+//RandomNumber 
+
+function RandomNumber (){
+  const NumberR = Math.floor(Math.random() * reviews.length);
+  currentItem = NumberR;
+  person(currentItem);
+}
+
+btnNext
+btnNext.addEventListener("click",function(){
+   currentItem = currentItem+1;
+   person(currentItem);
+
+});
+
+btnPrev
+btnPrev.addEventListener("click",function(){
+  currentItem = currentItem+-1;
+  person(currentItem);
+
+});
 
 window.addEventListener("DOMContentLoaded",function(){
-  const item = reviews[currentItem];
-  image.img = item.src;
+  currentItem++;
+ person(currentItem);
 })
 
-// function person(){
-//   info.contentText = item.info;
-//   job.contentText = item.job;
-//   author.contentText = item.author;
-//  }
+function person(currentItem){
+  const item = reviews[currentItem];
+  image.src= item.img;
+  getInfo.innerHTML = item.info;
+  getJob.innerHTML = item.job;
+  getAuthor.innerHTML = item.name;
+ }

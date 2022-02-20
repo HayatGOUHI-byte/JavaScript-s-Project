@@ -83,8 +83,8 @@ const prev = document.querySelector("img");
 
 window.addEventListener("DOMContentLoaded",function(){
 const item = reviews[currentItem];
-const a =document.getElementById("person-img").classList;
-console.log(a[0]);
+prev.src = item.img;
+
 
 
 

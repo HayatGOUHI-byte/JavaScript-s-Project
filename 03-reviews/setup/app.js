@@ -78,15 +78,28 @@ const reviews = [
  
 // })
 
+//current profile
+
 let currentItem = 1;
-const prev = document.querySelector("img");
+
+const btnNext = document.querySelector("next-btn");
+const btnPrev = document.querySelector("prev-btn");
+const image = document.querySelector("img");
+const info = document.getElementById("info");
+const job = document.getElementById("job");
+const author = document.getElementById("author");
+
 
 window.addEventListener("DOMContentLoaded",function(){
-const item = reviews[currentItem];
-prev.src = item.img;
-
-
-
+ person();
+ 
 
 })
 
+function person(){
+  const item = reviews[currentItem];
+  image.img = item.src;
+  info.contentText = item.info;
+  job.contentText = item.job;
+  author.contentText = item.author;
+}

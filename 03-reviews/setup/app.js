@@ -83,8 +83,7 @@ const prev = document.querySelector("img");
 
 window.addEventListener("DOMContentLoaded",function(){
 const item = reviews[currentItem];
-
-console.log(prev.getAttribute("src")) ;
+prev.getAttribute("src") = reviews[currentItem]["img"];
 
 
 })

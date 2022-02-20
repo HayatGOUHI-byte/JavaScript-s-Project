@@ -80,11 +80,11 @@ const reviews = [
 
 let currentItem = 1;
 window.addEventListener("DOMContentLoaded",function(){
-const item = reviews[1];
+const item = reviews[currentItem];
 
 
 let imageRecupere = document.getElementById("person-img").getAttribute("src");
-console.log(imageRecupere.innerHTML);
+console.log(imageRecuper
 
 
 

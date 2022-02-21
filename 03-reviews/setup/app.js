@@ -66,6 +66,9 @@ function RandomNumber (){
 btnNext
 btnNext.addEventListener("click",function(){
    currentItem = currentItem+1;
+   if(currentItem > reviews.length - 1){
+     currentItem =0;
+   }
    person(currentItem);
 
 });

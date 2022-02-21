@@ -60,32 +60,35 @@ buttonSurprise.addEventListener("click",function(){
 function RandomNumber (){
   const NumberR = Math.floor(Math.random() * reviews.length);
   currentItem = NumberR;
-  person(currentItem);
+  person();
 }
 
-btnNext
+
 btnNext.addEventListener("click",function(){
    currentItem = currentItem+1;
    if(currentItem > reviews.length - 1){
      currentItem =0;
    }
-   person(currentItem);
+   person();
 
 });
 
-btnPrev
+
 btnPrev.addEventListener("click",function(){
-  currentItem = currentItem+-1;
-  person(currentItem);
+  currentItem = currentItem-1;
+  if(currentItem<0)
+  currentItem = reviews.length - 1;
+  person();
 
 });
+
 
 window.addEventListener("DOMContentLoaded",function(){
   currentItem++;
- person(currentItem);
+ person();
 })
 
-function person(currentItem){
+function person(){
   const item = reviews[currentItem];
   image.src= item.img;
   getInfo.innerHTML = item.info;

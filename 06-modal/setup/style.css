@@ -32,7 +32,11 @@ h1{
     color:black;
     font-size:3rem;
     font-family: fantasy;
+
+   
 }
+
+
 .box {
     background-color:var(--clr-box);
     height:10rem;
@@ -41,12 +45,20 @@ h1{
     display:flex;
     justify-content: center;
     border-radius:var(--border-radius);
+    margin:2rem;
+    padding:3rem;
+    letter-spacing: 0.2rem;
+    
    
 }
 
 button {
     padding: 0.5rem;
     border-radius:var(--border-radius);
+    background-color:var(--hover-color);
+    justify-content:center;
+  
+    
   
     
 }
@@ -55,8 +67,8 @@ button:hover {
     background-color:var(--hover-color);
 }
 
-
 .box-1 {
     display:block;
     gap:1rem;
+    line-height:8rem;
 }

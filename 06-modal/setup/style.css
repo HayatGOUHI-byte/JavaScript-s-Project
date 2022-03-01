@@ -30,19 +30,24 @@ h1{
 
 .title {
     color:black;
+    font-size:3rem;
+    font-family: fantasy;
 }
 .box {
     background-color:var(--clr-box);
     height:10rem;
-    width:10rem;
+    width:50rem;
     position: fixed;
-    padding:1rem;
+    display:flex;
+    justify-content: center;
+    border-radius:var(--border-radius);
    
 }
 
 button {
     padding: 0.5rem;
     border-radius:var(--border-radius);
+  
     
 }
 
@@ -51,3 +56,7 @@ button:hover {
 }
 
 
+.box-1 {
+    display:block;
+    gap:1rem;
+}

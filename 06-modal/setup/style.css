@@ -1,0 +1,15 @@
+*, ::after, ::before {
+    margin:0;
+    padding:0;
+    box-sizing: border-size;
+}
+
+body {
+    background-image:url("image.jpg");
+    background-repeat:no-repeat;
+    background-position:right;
+}
+
+h1{
+    color:white;
+}

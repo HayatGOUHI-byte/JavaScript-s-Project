@@ -1,6 +1,8 @@
 
 :root {
     --clr-box :white;
+    --border-radius:10px;
+    --hover-color:blue;
 }
 
 *, ::after, ::before {
@@ -14,18 +16,38 @@ body {
     background-image:url("image.jfif");
     background-repeat:no-repeat;
     background-size:1000px 2000px;
+    
 
 }
-
-h1, .title{
+h1, .title {
+    line-height:40px;
+}
+h1{
     color:greenyellow;
-    align-items:center;
+   
 
 }
 
+.title {
+    color:black;
+}
 .box {
     background-color:var(--clr-box);
     height:10rem;
     width:10rem;
     position: fixed;
+    padding:1rem;
+   
 }
+
+button {
+    padding: 0.5rem;
+    border-radius:var(--border-radius);
+    
+}
+
+button:hover {
+    background-color:var(--hover-color);
+}
+
+

@@ -5,9 +5,9 @@
 }
 
 body {
-    background-image:url("image.jpg");
-    background-repeat:no-repeat;
-    background-position:right;
+    background-image:url("image.jfif");
+  background-repeat:no-repeat;
+  background-size:1000px 1000px;
 }
 
 h1{

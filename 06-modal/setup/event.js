@@ -1,6 +1,6 @@
-const box1 = document.querySelector("box-shadow");
+const box1 = document.querySelector("box-show");
 window.addEventListener("DOMContentLoaded", function(){
-    box1.display= "noone";
+    box1.style.visibility='show';
 }
 )
 

@@ -13,9 +13,8 @@
 }
 
 body {
-    background-image:url("image.jfif");
-    background-repeat:no-repeat;
-    background-size:1000px 2000px;
+    background-image:url("image.jpg") center/cover no-repeat;
+    
     
 
 }
@@ -55,12 +54,7 @@ h1{
 button {
     padding: 0.5rem;
     border-radius:var(--border-radius);
-    background-color:var(--hover-color);
-    justify-content:center;
-  
-    
-  
-    
+    background-color:var(--hover-color);  
 }
 
 button:hover {
@@ -71,4 +65,21 @@ button:hover {
     display:block;
     gap:1rem;
     line-height:8rem;
+}
+
+
+/*****************************An other box********************************/
+
+
+.box {
+    background-color:var(--clr-box);
+    height:10rem;
+    width:50rem;
+    position: fixed;
+    display:flex;
+    justify-content: center;
+    border-radius:var(--border-radius);
+    margin:2rem;
+    padding:3rem;
+    letter-spacing: 0.2rem;  
 }

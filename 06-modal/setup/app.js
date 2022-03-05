@@ -8,5 +8,5 @@ btnOpenModal.addEventListener("click", () => {
 })
 
 closeBtn.addEventListener("click",() => {
-    modal.classList.remove("open-modal");
+   modal.classList.remove("open-modal");
 })

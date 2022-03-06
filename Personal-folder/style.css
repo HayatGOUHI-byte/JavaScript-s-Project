@@ -1,0 +1,31 @@
+:root {
+    --clr-bd:hsl(236, 60%, 86%);
+    --clr-font:hsl(111, 60%, 28%);
+}
+
+*,::before,::after {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    color:var(--clr-bd);
+}
+
+.title {
+    color:var(--clr-font);
+    font-size:2rem;
+}
+.Q {
+    color:var(--clr-font);
+    font-size:1rem;
+    background-color:bisque;
+    border:1px solid black;
+}
+
+.container {
+    display:inline-block;
+    justify-items: center;
+
+}

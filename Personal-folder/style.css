@@ -1,36 +1,7 @@
-:root {
-    --clr-bd:hsl(236, 60%, 86%);
-    --clr-font:hsl(111, 60%, 28%);
+img {
+    display: block;
 }
 
-*,::before,::after {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
-    border:none;
-}
-
-body {
-    color:var(--clr-bd);
-}
-
-.title {
-    color:var(--clr-font);
-    font-size:2rem;
-}
-.Q {
-    color:var(--clr-font);
-    font-size:1.09rem;
-    background-color:bisque;
-    /* border:1px solid black; */
-    height:3.8rem;
-    width:20rem;
-    padding:0.8rem;
-    text-transform: lowercase;
-}
-
-.container {
-    display:inline-block;
-    justify-items: center;
-
+.container > div {
+    float: left;
 }

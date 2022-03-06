@@ -7,6 +7,7 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
+    border:none;
 }
 
 body {
@@ -19,9 +20,13 @@ body {
 }
 .Q {
     color:var(--clr-font);
-    font-size:1rem;
+    font-size:1.09rem;
     background-color:bisque;
-    border:1px solid black;
+    /* border:1px solid black; */
+    height:3.8rem;
+    width:20rem;
+    padding:0.8rem;
+    text-transform: lowercase;
 }
 
 .container {

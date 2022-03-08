@@ -246,3 +246,15 @@ Questions
 .show-text .plus-icon {
   display: none;
 } */
+
+.visible {
+  visibility: visible;
+}
+
+.not-visible {
+  visibility: hidden;
+}
+
+.respond {
+  visibility:hidden;
+}

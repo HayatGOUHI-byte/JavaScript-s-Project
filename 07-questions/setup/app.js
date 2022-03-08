@@ -1,23 +1,11 @@
-//using selectors inside the element
-// traversing the dom
+
+ const btns = document.querySelectorAll(".question-btn");
+
+ btns.forEach(function(btn){
+        btn.addEventListener("click",function(e){
+        console.log(e.currentTarget);
+
+      })
+ })
 
 
-const plusIcon  =document.querySelector(".plus-icon");
-const MinusIcon = document.querySelector(".minus-icon");
-const Reponse = document.querySelector(".respond");
-
-
-
-// window.addEventListener("DOMContentLoaded",function(){
-//     Response.classList.add(".not-visible");
-// })
-
-plusIcon.addEventListener("click", () => {
-  Response.classList.add('.visible');
-
-})
-
-
-// MinusIcon.addEventListener("click", () => {
-    
-// }) 

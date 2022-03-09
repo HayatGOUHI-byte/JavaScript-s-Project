@@ -1,9 +1,15 @@
 /*******************autre methode de se faire************************ */
 
-
 const question = document.querySelectorAll(".question");
-question.forEach(function(orange){
-  console.log(orange.classList);
+
+question.forEach(function(){
+
+
+  const btn = question.querySelector('question-btn');
+  console.log(btn);
+
+
+
 })
 
 /************************* */

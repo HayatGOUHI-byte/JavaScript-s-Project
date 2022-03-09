@@ -1,17 +1,17 @@
 /*******************autre methode de se faire************************ */
 
-// const questions = document.querySelectorAll(".question");
+const questions = document.querySelectorAll(".question");
 
-// questions.forEach(function(question){
+questions.forEach(function(question){
 
-//   const btn = question.querySelector(".question-btn");
-//   btn.addEventListener("click",function(){
-//     question.classList.toggle("show-text");
-//   })
-// })
+  const btn = question.querySelector(".question-btn");
+  btn.addEventListener("click",function(){
+    question.classList.toggle("show-text");
+  })
+})
 
-const question = document.querySelector('body');
-console.log(question);
+// const question = document.querySelector('body');
+// console.log(question);
 
 /************************* */
 //  const btns = document.querySelectorAll(".question-btn");

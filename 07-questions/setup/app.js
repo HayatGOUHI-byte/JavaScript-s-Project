@@ -1,11 +1,13 @@
 /*******************autre methode de se faire************************ */
 
+
 const question = document.querySelector(".question");
-question.addEventListener("click", () => 
-{
-  var msg = "Bonjour tout le monde";
-  console.log( msg);
+
+question.forEach(function(orange){
+  console.log(orange);
 })
+
+
 /************************* */
 //  const btns = document.querySelectorAll(".question-btn");
 
